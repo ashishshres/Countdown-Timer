@@ -28,6 +28,14 @@ h1 {
     font-size: 2.5rem;
 }
 
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
 button {
     width: 7rem;
     font-size: 1rem;
@@ -59,4 +67,16 @@ input {
 .ri-timer-line {
     font-size: 3rem;
     color: rgb(116, 127, 255);
+}
+
+@media screen and (max-width: 430px) {
+    .btns {
+        max-width: 300px;
+        padding-bottom: 5vmin;
+    }
+
+    button,
+    input {
+        width: 100%;
+    }
 }
