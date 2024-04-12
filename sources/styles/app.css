@@ -55,3 +55,8 @@ input {
     padding: 10px 20px;
     font-size: 1rem;
 }
+
+.ri-timer-line {
+    font-size: 3rem;
+    color: rgb(116, 127, 255);
+}
