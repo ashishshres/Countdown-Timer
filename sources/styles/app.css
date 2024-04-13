@@ -81,6 +81,27 @@ input {
 
 .overlay {
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
+    background-color: #121212;
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    margin: 2rem;
+    font-weight: 700;
+    color: #222;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.25s ease-in-out;
+    border-radius: 7px;
 }
 
 @media screen and (max-width: 430px) {
