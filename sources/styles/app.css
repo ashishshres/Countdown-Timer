@@ -69,6 +69,16 @@ input {
     color: rgb(116, 127, 255);
 }
 
+.container {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    background-color: #212121;
+}
+
 .overlay {
     font-size: 3rem;
 }
