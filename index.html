@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./sources/styles/app.css">
-    <script src="./sources/scripts/app.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/app.js" defer></script>
 </head>
 
-<body>
-    <div class="app">
-        <h1>
-            <i class="ri-timer-line"></i>
+<body class="h-full w-full bg-[#121212] text-[#e4e4e4] font-sans">
+    <div class="app h-full w-full flex flex-col items-center justify-center p-8 gap-7">
+        <h1 class="text-[2.5rem] font-semibold text-center">
+            <i class="ri-timer-line text-[#747fff] text-5xl"></i>
             Countdown Timer
         </h1>
         <div class="timer">
-            <div class="container">
-                <div class="overlay">
+            <div class="container h-60 w-60 bg-[#212121] rounded-full flex items-center justify-center">
+                <div class="overlay text-5xl h-52 w-52 bg-[#121212] rounded-full flex items-center justify-center">
                     <span>00:00</span>
                 </div>
             </div>
         </div>
-        <div class="btns">
-            <input type="text" placeholder="Minutes" id="time">
-            <button class="start">Start</button>
-            <button class="reset">Reset</button>
+        <div class="btns flex flex-col wrap sm:flex-row gap-2 w-full items-center justify-center">
+            <input type="text" placeholder="Minutes" id="time"
+                class="rounded-md py-2 px-2 text-center text-md sm:w-[7rem] bg-transparent border-solid border-[1px] border-gray-700 w-full">
+            <button
+                class="start rounded-md bg-[#fafafa] text-[#111] px-8 py-2 text-md sm:w-[7rem] hover:bg-[#e2e2e2] w-full">Start</button>
+            <button
+                class="reset rounded-md bg-[#fafafa] text-[#111] px-8 py-2 text-md sm:w-[7rem] hover:bg-[#e2e2e2] w-full">Reset</button>
         </div>
     </div>
-    <div class="alert"></div>
+    <div
+        class="alert rounded-md px-4 py-3 text-[#222] font-bold fixed right-0 top-0 m-5 translate-x-full transition ease-in-out duration-[0.25s]">
+    </div>
 </body>
 
 </html>
